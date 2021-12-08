@@ -504,7 +504,7 @@ namespace DAL
 		
 		private System.Nullable<int> _SoLan;
 		
-		private EntityRef<CTVIPHAM> _CTVIPHAM;
+		private EntitySet<CTVIPHAM> _CTVIPHAMs;
 		
 		private EntityRef<LOAIVIPHAM> _LOAIVIPHAM;
 		
@@ -526,7 +526,7 @@ namespace DAL
 		
 		public VIPHAM()
 		{
-			this._CTVIPHAM = default(EntityRef<CTVIPHAM>);
+			this._CTVIPHAMs = new EntitySet<CTVIPHAM>(new Action<CTVIPHAM>(this.attach_CTVIPHAMs), new Action<CTVIPHAM>(this.detach_CTVIPHAMs));
 			this._LOAIVIPHAM = default(EntityRef<LOAIVIPHAM>);
 			OnCreated();
 		}
@@ -635,32 +635,16 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="VIPHAM_CTVIPHAM", Storage="_CTVIPHAM", ThisKey="MaVP", OtherKey="MaVP", IsUnique=true, IsForeignKey=false)]
-		public CTVIPHAM CTVIPHAM
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="VIPHAM_CTVIPHAM", Storage="_CTVIPHAMs", ThisKey="MaVP", OtherKey="MaVP")]
+		public EntitySet<CTVIPHAM> CTVIPHAMs
 		{
 			get
 			{
-				return this._CTVIPHAM.Entity;
+				return this._CTVIPHAMs;
 			}
 			set
 			{
-				CTVIPHAM previousValue = this._CTVIPHAM.Entity;
-				if (((previousValue != value) 
-							|| (this._CTVIPHAM.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._CTVIPHAM.Entity = null;
-						previousValue.VIPHAM = null;
-					}
-					this._CTVIPHAM.Entity = value;
-					if ((value != null))
-					{
-						value.VIPHAM = this;
-					}
-					this.SendPropertyChanged("CTVIPHAM");
-				}
+				this._CTVIPHAMs.Assign(value);
 			}
 		}
 		
@@ -716,6 +700,18 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_CTVIPHAMs(CTVIPHAM entity)
+		{
+			this.SendPropertyChanging();
+			entity.VIPHAM = this;
+		}
+		
+		private void detach_CTVIPHAMs(CTVIPHAM entity)
+		{
+			this.SendPropertyChanging();
+			entity.VIPHAM = null;
 		}
 	}
 	
@@ -1153,13 +1149,13 @@ namespace DAL
 		
 		private string _MaHD;
 		
-		private System.Nullable<double> _SoDienCu;
+		private double _SoDienCu;
 		
-		private System.Nullable<double> _SoNuocCu;
+		private double _SoNuocCu;
 		
-		private System.Nullable<double> _SoDienMoi;
+		private double _SoDienMoi;
 		
-		private System.Nullable<double> _SoNuocMoi;
+		private double _SoNuocMoi;
 		
 		private System.Nullable<double> _TienDien;
 		
@@ -1173,13 +1169,13 @@ namespace DAL
     partial void OnCreated();
     partial void OnMaHDChanging(string value);
     partial void OnMaHDChanged();
-    partial void OnSoDienCuChanging(System.Nullable<double> value);
+    partial void OnSoDienCuChanging(double value);
     partial void OnSoDienCuChanged();
-    partial void OnSoNuocCuChanging(System.Nullable<double> value);
+    partial void OnSoNuocCuChanging(double value);
     partial void OnSoNuocCuChanged();
-    partial void OnSoDienMoiChanging(System.Nullable<double> value);
+    partial void OnSoDienMoiChanging(double value);
     partial void OnSoDienMoiChanged();
-    partial void OnSoNuocMoiChanging(System.Nullable<double> value);
+    partial void OnSoNuocMoiChanging(double value);
     partial void OnSoNuocMoiChanged();
     partial void OnTienDienChanging(System.Nullable<double> value);
     partial void OnTienDienChanged();
@@ -1217,8 +1213,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienCu", DbType="Float")]
-		public System.Nullable<double> SoDienCu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienCu", DbType="Float NOT NULL")]
+		public double SoDienCu
 		{
 			get
 			{
@@ -1237,8 +1233,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoNuocCu", DbType="Float")]
-		public System.Nullable<double> SoNuocCu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoNuocCu", DbType="Float NOT NULL")]
+		public double SoNuocCu
 		{
 			get
 			{
@@ -1257,8 +1253,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienMoi", DbType="Float")]
-		public System.Nullable<double> SoDienMoi
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienMoi", DbType="Float NOT NULL")]
+		public double SoDienMoi
 		{
 			get
 			{
@@ -1277,8 +1273,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoNuocMoi", DbType="Float")]
-		public System.Nullable<double> SoNuocMoi
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoNuocMoi", DbType="Float NOT NULL")]
+		public double SoNuocMoi
 		{
 			get
 			{
@@ -1802,7 +1798,7 @@ namespace DAL
 		
 		private string _MaVP;
 		
-		private System.Nullable<System.DateTime> _NgayLap;
+		private System.DateTime _NgayLap;
 		
 		private string _GhiChu;
 		
@@ -1814,7 +1810,7 @@ namespace DAL
     partial void OnCreated();
     partial void OnMaVPChanging(string value);
     partial void OnMaVPChanged();
-    partial void OnNgayLapChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayLapChanging(System.DateTime value);
     partial void OnNgayLapChanged();
     partial void OnGhiChuChanging(string value);
     partial void OnGhiChuChanged();
@@ -1850,8 +1846,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLap", DbType="Date")]
-		public System.Nullable<System.DateTime> NgayLap
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLap", DbType="Date NOT NULL", IsPrimaryKey=true)]
+		public System.DateTime NgayLap
 		{
 			get
 			{
@@ -1907,12 +1903,12 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._VIPHAM.Entity = null;
-						previousValue.CTVIPHAM = null;
+						previousValue.CTVIPHAMs.Remove(this);
 					}
 					this._VIPHAM.Entity = value;
 					if ((value != null))
 					{
-						value.CTVIPHAM = this;
+						value.CTVIPHAMs.Add(this);
 						this._MaVP = value.MaVP;
 					}
 					else
@@ -1965,6 +1961,8 @@ namespace DAL
 		
 		private string _MaNV;
 		
+		private System.Nullable<bool> _TinhTrang;
+		
 		private EntityRef<CTHOADONDIENNUOC> _CTHOADONDIENNUOC;
 		
     #region Extensibility Method Definitions
@@ -1985,6 +1983,8 @@ namespace DAL
     partial void OnTongTienChanged();
     partial void OnMaNVChanging(string value);
     partial void OnMaNVChanged();
+    partial void OnTinhTrangChanging(System.Nullable<bool> value);
+    partial void OnTinhTrangChanged();
     #endregion
 		
 		public HOADONDIENNUOC()
@@ -2129,6 +2129,26 @@ namespace DAL
 					this._MaNV = value;
 					this.SendPropertyChanged("MaNV");
 					this.OnMaNVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="Bit")]
+		public System.Nullable<bool> TinhTrang
+		{
+			get
+			{
+				return this._TinhTrang;
+			}
+			set
+			{
+				if ((this._TinhTrang != value))
+				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
+					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}
@@ -3278,9 +3298,9 @@ namespace DAL
 		
 		private System.Nullable<bool> _TinhTrang;
 		
-		private System.Nullable<double> _DongHoDien;
+		private double _DongHoDien;
 		
-		private System.Nullable<double> _DongHoNuoc;
+		private double _DongHoNuoc;
 		
 		private EntitySet<CTPHONG> _CTPHONGs;
 		
@@ -3296,9 +3316,9 @@ namespace DAL
     partial void OnSoLuongChanged();
     partial void OnTinhTrangChanging(System.Nullable<bool> value);
     partial void OnTinhTrangChanged();
-    partial void OnDongHoDienChanging(System.Nullable<double> value);
+    partial void OnDongHoDienChanging(double value);
     partial void OnDongHoDienChanged();
-    partial void OnDongHoNuocChanging(System.Nullable<double> value);
+    partial void OnDongHoNuocChanging(double value);
     partial void OnDongHoNuocChanged();
     #endregion
 		
@@ -3369,8 +3389,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DongHoDien", DbType="Float")]
-		public System.Nullable<double> DongHoDien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DongHoDien", DbType="Float NOT NULL")]
+		public double DongHoDien
 		{
 			get
 			{
@@ -3389,8 +3409,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DongHoNuoc", DbType="Float")]
-		public System.Nullable<double> DongHoNuoc
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DongHoNuoc", DbType="Float NOT NULL")]
+		public double DongHoNuoc
 		{
 			get
 			{

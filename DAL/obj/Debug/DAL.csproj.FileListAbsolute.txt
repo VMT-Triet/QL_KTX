@@ -10,3 +10,15 @@ E:\Study\Do An\KTX\DAL\bin\Debug\ktx_log.ldf
 E:\Study\Do An\KTX\DAL\bin\Debug\DelegateDecompiler.dll
 E:\Study\Do An\KTX\DAL\bin\Debug\Mono.Reflection.dll
 E:\Study\Do An\KTX\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Github\QL_KTX\DAL\bin\Debug\ktx.mdf
+E:\Github\QL_KTX\DAL\bin\Debug\ktx_log.ldf
+E:\Github\QL_KTX\DAL\bin\Debug\DAL.dll.config
+E:\Github\QL_KTX\DAL\bin\Debug\DAL.dll
+E:\Github\QL_KTX\DAL\bin\Debug\DAL.pdb
+E:\Github\QL_KTX\DAL\bin\Debug\DelegateDecompiler.dll
+E:\Github\QL_KTX\DAL\bin\Debug\Mono.Reflection.dll
+E:\Github\QL_KTX\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Github\QL_KTX\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Github\QL_KTX\DAL\obj\Debug\DAL.dll
+E:\Github\QL_KTX\DAL\obj\Debug\DAL.pdb
+E:\Github\QL_KTX\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

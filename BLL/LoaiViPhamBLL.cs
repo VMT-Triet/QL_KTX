@@ -69,5 +69,9 @@ namespace BLL
                 return false;
             }
         }
+        public LOAIVIPHAM layMucDo(string maloai)
+        {
+            return db.LOAIVIPHAMs.Where(x => x.MaLoaiVP == maloai).FirstOrDefault();
+        }
     }
 }

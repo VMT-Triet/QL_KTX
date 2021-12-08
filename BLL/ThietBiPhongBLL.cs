@@ -17,11 +17,11 @@ namespace BLL
             DataTable dt = new DataTable();
             var linq = from tbp in db.THIETBIPHONGs
                        join tb in db.THIETBIs on tbp.MaTB equals tb.MaTB
-                       join p in db.PHONGs on tbp.SoPhong equals p.SoPhong                       
+                       //join p in db.PHONGs on tbp.SoPhong equals p.SoPhong                       
                        select new
                        {
                            MATB = tb.TenTB,
-                           SOPHONG = p.SoPhong,                           
+                           SOPHONG = tbp.SoPhong,                           
                            SOLUONG = tbp.SoLuong
                        };
             SqlCommand cmd = db.GetCommand(linq) as SqlCommand;

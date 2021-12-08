@@ -25,3 +25,36 @@ E:\Study\Do An\KTX\KTX\bin\Debug\DelegateDecompiler.dll
 E:\Study\Do An\KTX\KTX\bin\Debug\Mono.Reflection.dll
 E:\Study\Do An\KTX\KTX\obj\Debug\KTX.ThietBiForm.resources
 E:\Study\Do An\KTX\KTX\obj\Debug\KTX.LoaiViPhamForm.resources
+E:\Github\QL_KTX\KTX\bin\Debug\ktx.mdf
+E:\Github\QL_KTX\KTX\bin\Debug\ktx_log.ldf
+E:\Github\QL_KTX\KTX\bin\Debug\KTX.exe.config
+E:\Github\QL_KTX\KTX\bin\Debug\KTX.exe
+E:\Github\QL_KTX\KTX\bin\Debug\KTX.pdb
+E:\Github\QL_KTX\KTX\bin\Debug\BLL.dll
+E:\Github\QL_KTX\KTX\bin\Debug\DAL.dll
+E:\Github\QL_KTX\KTX\bin\Debug\DelegateDecompiler.dll
+E:\Github\QL_KTX\KTX\bin\Debug\FontAwesome.Sharp.dll
+E:\Github\QL_KTX\KTX\bin\Debug\Mono.Reflection.dll
+E:\Github\QL_KTX\KTX\bin\Debug\BLL.pdb
+E:\Github\QL_KTX\KTX\bin\Debug\DAL.pdb
+E:\Github\QL_KTX\KTX\bin\Debug\DAL.dll.config
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.csproj.AssemblyReference.cache
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.CTPhongForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.DangNhapForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.LoaiViPhamForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.MainForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.PhongForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.Properties.Resources.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.QuanLyViPhamForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.ThietBiForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.ThietBiPhongForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.csproj.GenerateResource.cache
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.csproj.CoreCompileInputs.cache
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.csproj.CopyComplete
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.exe
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.pdb
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.CTViPhamForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.Form1.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.BaoTriForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.DienNuocForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.HopDongForm.resources

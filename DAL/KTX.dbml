@@ -18,7 +18,7 @@
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="MaSV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="SoLan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="VIPHAM_CTVIPHAM" Member="CTVIPHAM" ThisKey="MaVP" OtherKey="MaVP" Type="CTVIPHAM" Cardinality="One" />
+      <Association Name="VIPHAM_CTVIPHAM" Member="CTVIPHAMs" ThisKey="MaVP" OtherKey="MaVP" Type="CTVIPHAM" />
       <Association Name="LOAIVIPHAM_VIPHAM" Member="LOAIVIPHAM" ThisKey="MaLoaiVP" OtherKey="MaLoaiVP" Type="LOAIVIPHAM" IsForeignKey="true" />
     </Type>
   </Table>
@@ -46,10 +46,10 @@
   <Table Name="dbo.CTHOADONDIENNUOC" Member="CTHOADONDIENNUOCs">
     <Type Name="CTHOADONDIENNUOC">
       <Column Name="MaHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="SoDienCu" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="SoNuocCu" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="SoDienMoi" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="SoNuocMoi" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SoDienCu" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SoNuocCu" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SoDienMoi" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SoNuocMoi" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="TienDien" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="TienNuoc" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="HOADONDIENNUOC_CTHOADONDIENNUOC" Member="HOADONDIENNUOC" ThisKey="MaHD" OtherKey="MaHD" Type="HOADONDIENNUOC" IsForeignKey="true" />
@@ -88,7 +88,7 @@
   <Table Name="dbo.CTVIPHAM" Member="CTVIPHAMs">
     <Type Name="CTVIPHAM">
       <Column Name="MaVP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="NgayLap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayLap" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="GhiChu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Association Name="VIPHAM_CTVIPHAM" Member="VIPHAM" ThisKey="MaVP" OtherKey="MaVP" Type="VIPHAM" IsForeignKey="true" />
     </Type>
@@ -102,6 +102,7 @@
       <Column Name="SoNuoc" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="HOADONDIENNUOC_CTHOADONDIENNUOC" Member="CTHOADONDIENNUOC" ThisKey="MaHD" OtherKey="MaHD" Type="CTHOADONDIENNUOC" Cardinality="One" />
       <Association Name="HOADONDIENNUOC_CTTHONGKE" Member="CTTHONGKEs" ThisKey="MaHD" OtherKey="MaHD" Type="CTTHONGKE" />
     </Type>
@@ -169,8 +170,8 @@
       <Column Name="SoPhong" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DongHoDien" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DongHoNuoc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DongHoDien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DongHoNuoc" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Association Name="PHONG_CTPHONG" Member="CTPHONGs" ThisKey="SoPhong" OtherKey="SoPhong" Type="CTPHONG" />
       <Association Name="PHONG_THIETBIPHONG" Member="THIETBIPHONGs" ThisKey="SoPhong" OtherKey="SoPhong" Type="THIETBIPHONG" />
     </Type>

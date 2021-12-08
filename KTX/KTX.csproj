@@ -76,17 +76,47 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoTriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoTriForm.Designer.cs">
+      <DependentUpon>BaoTriForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTPhongForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CTPhongForm.Designer.cs">
       <DependentUpon>CTPhongForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTViPhamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTViPhamForm.Designer.cs">
+      <DependentUpon>CTViPhamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhapForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DangNhapForm.Designer.cs">
       <DependentUpon>DangNhapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DienNuocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DienNuocForm.Designer.cs">
+      <DependentUpon>DienNuocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HopDongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HopDongForm.Designer.cs">
+      <DependentUpon>HopDongForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoaiViPhamForm.cs">
       <SubType>Form</SubType>
@@ -126,11 +156,26 @@
     <Compile Include="ThietBiPhongForm.Designer.cs">
       <DependentUpon>ThietBiPhongForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoTriForm.resx">
+      <DependentUpon>BaoTriForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CTPhongForm.resx">
       <DependentUpon>CTPhongForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTViPhamForm.resx">
+      <DependentUpon>CTViPhamForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhapForm.resx">
       <DependentUpon>DangNhapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DienNuocForm.resx">
+      <DependentUpon>DienNuocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HopDongForm.resx">
+      <DependentUpon>HopDongForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoaiViPhamForm.resx">
       <DependentUpon>LoaiViPhamForm.cs</DependentUpon>

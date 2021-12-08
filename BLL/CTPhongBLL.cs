@@ -16,13 +16,13 @@ namespace BLL
         {
             DataTable dt = new DataTable();
             var linq = from ctp in db.CTPHONGs
-                       join sv in db.SINHVIENs on ctp.MaSV equals sv.MaSV
-                       join p in db.PHONGs on ctp.SoPhong equals p.SoPhong
-                       join pgx in db.PHIEUGUIXEs on ctp.MaSV equals pgx.MaSV
+                       //join sv in db.SINHVIENs on ctp.MaSV equals sv.MaSV
+                       //join p in db.PHONGs on ctp.SoPhong equals p.SoPhong
+                       //join pgx in db.PHIEUGUIXEs on ctp.MaSV equals pgx.MaSV
                        select new
                        {
-                           SOPHONG = p.SoPhong,
-                           MASV = sv.MaSV,
+                           SOPHONG = ctp.SoPhong,
+                           MASV = ctp.MaSV,
                            GUIXE = ctp.GuiXe                           
                        };
             SqlCommand cmd = db.GetCommand(linq) as SqlCommand;

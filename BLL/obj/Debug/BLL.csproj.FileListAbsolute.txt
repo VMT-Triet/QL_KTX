@@ -12,3 +12,17 @@ E:\Study\Do An\KTX\BLL\bin\Debug\ktx.mdf
 E:\Study\Do An\KTX\BLL\bin\Debug\ktx_log.ldf
 E:\Study\Do An\KTX\BLL\bin\Debug\DelegateDecompiler.dll
 E:\Study\Do An\KTX\BLL\bin\Debug\Mono.Reflection.dll
+E:\Github\QL_KTX\BLL\bin\Debug\ktx.mdf
+E:\Github\QL_KTX\BLL\bin\Debug\ktx_log.ldf
+E:\Github\QL_KTX\BLL\bin\Debug\BLL.dll
+E:\Github\QL_KTX\BLL\bin\Debug\BLL.pdb
+E:\Github\QL_KTX\BLL\bin\Debug\DAL.dll
+E:\Github\QL_KTX\BLL\bin\Debug\DelegateDecompiler.dll
+E:\Github\QL_KTX\BLL\bin\Debug\Mono.Reflection.dll
+E:\Github\QL_KTX\BLL\bin\Debug\DAL.pdb
+E:\Github\QL_KTX\BLL\bin\Debug\DAL.dll.config
+E:\Github\QL_KTX\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Github\QL_KTX\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Github\QL_KTX\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Github\QL_KTX\BLL\obj\Debug\BLL.dll
+E:\Github\QL_KTX\BLL\obj\Debug\BLL.pdb

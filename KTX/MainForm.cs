@@ -18,19 +18,15 @@ namespace KTX
     {
         NhanVienBLL NhanVienBus = new NhanVienBLL();
         NHANVIEN nvhientai;
+        
         ChucVuBLL ChucVuBus = new ChucVuBLL();        
-        public NHANVIEN nvht;
-        public NHANVIEN let
-        {
-            get { return nvht; }
-            set { nvht = value; }
-        }
+        
 
         IconButton currentButton = null;
         Panel leftBorder = null;
         Form currentForm = null;
 
-        string tk;
+        //string tk;
         public MainForm(NHANVIEN nv)
         {
             InitializeComponent();
@@ -39,11 +35,9 @@ namespace KTX
             panelMenu.Controls.Add(leftBorder);
             reset();
             this.nvhientai = nv;
+            
         }
-        public void getData(NHANVIEN nv)
-        {
-            this.nvhientai = nv;
-        }
+        
         struct myColors
         {
             public static Color color1 = Color.FromArgb(24, 161, 251);
@@ -256,6 +250,30 @@ namespace KTX
         {
             activeButton(sender, myColors.color4);
             openForm(new LoaiViPhamForm());
+        }
+
+        private void btnQuanLyViPham_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color1);
+            openForm(new QuanLyViPhamForm(nvhientai));
+        }
+
+        private void btnCTViPham_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color2);
+            openForm(new CTViPhamForm());
+        }
+
+        private void btnBaoTri_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color3);
+            openForm(new BaoTriForm(nvhientai));
+        }
+
+        private void btnDienNuoc_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color3);
+            openForm(new DienNuocForm(nvhientai));
         }
     }
 }
