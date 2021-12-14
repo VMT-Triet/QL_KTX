@@ -54,6 +54,15 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
     <Reference Include="Mono.Reflection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Reflection.Core.1.1.1\lib\net45\Mono.Reflection.dll</HintPath>
     </Reference>
@@ -130,6 +139,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NienKhoaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NienKhoaForm.Designer.cs">
+      <DependentUpon>NienKhoaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +153,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyGuiXeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyGuiXeForm.Designer.cs">
+      <DependentUpon>QuanLyGuiXeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyViPhamForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyViPhamForm.Designer.cs">
       <DependentUpon>QuanLyViPhamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForm.Designer.cs">
+      <DependentUpon>SinhVienForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ThietBiForm.cs">
       <SubType>Form</SubType>
@@ -183,6 +210,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NienKhoaForm.resx">
+      <DependentUpon>NienKhoaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhongForm.resx">
       <DependentUpon>PhongForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,8 +225,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyGuiXeForm.resx">
+      <DependentUpon>QuanLyGuiXeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyViPhamForm.resx">
       <DependentUpon>QuanLyViPhamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVienForm.resx">
+      <DependentUpon>SinhVienForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThietBiForm.resx">
       <DependentUpon>ThietBiForm.cs</DependentUpon>

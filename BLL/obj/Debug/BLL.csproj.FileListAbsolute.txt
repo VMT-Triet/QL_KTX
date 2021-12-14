@@ -26,3 +26,7 @@ E:\Github\QL_KTX\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 E:\Github\QL_KTX\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\Github\QL_KTX\BLL\obj\Debug\BLL.dll
 E:\Github\QL_KTX\BLL\obj\Debug\BLL.pdb
+E:\Github\QL_KTX\BLL\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Github\QL_KTX\BLL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\Github\QL_KTX\BLL\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+E:\Github\QL_KTX\BLL\bin\Debug\Microsoft.SqlServer.Types.dll

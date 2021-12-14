@@ -2221,6 +2221,8 @@ namespace DAL
 		
 		private System.Nullable<double> _TongTien;
 		
+		private string _TinhTrang;
+		
 		private EntityRef<NIENKHOA> _NIENKHOA;
 		
     #region Extensibility Method Definitions
@@ -2239,6 +2241,8 @@ namespace DAL
     partial void OnMaNKChanged();
     partial void OnTongTienChanging(System.Nullable<double> value);
     partial void OnTongTienChanged();
+    partial void OnTinhTrangChanging(string value);
+    partial void OnTinhTrangChanged();
     #endregion
 		
 		public HOPDONG()
@@ -2367,6 +2371,26 @@ namespace DAL
 					this._TongTien = value;
 					this.SendPropertyChanged("TongTien");
 					this.OnTongTienChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="NVarChar(20)")]
+		public string TinhTrang
+		{
+			get
+			{
+				return this._TinhTrang;
+			}
+			set
+			{
+				if ((this._TinhTrang != value))
+				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
+					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}

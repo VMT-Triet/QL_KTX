@@ -261,7 +261,7 @@ namespace KTX
         private void btnCTViPham_Click(object sender, EventArgs e)
         {
             activeButton(sender, myColors.color2);
-            openForm(new CTViPhamForm());
+            openForm(new NienKhoaForm());
         }
 
         private void btnBaoTri_Click(object sender, EventArgs e)
@@ -274,6 +274,24 @@ namespace KTX
         {
             activeButton(sender, myColors.color3);
             openForm(new DienNuocForm(nvhientai));
+        }
+
+        private void btnQuanLyHopDong_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color2);
+            openForm(new HopDongForm(nvhientai));
+        }
+
+        private void btnQuanLySinhVien_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color3);
+            openForm(new SinhVienForm());
+        }
+
+        private void btnQuanLyGuiXe_Click(object sender, EventArgs e)
+        {
+            activeButton(sender, myColors.color3);
+            openForm(new QuanLyGuiXeForm());
         }
     }
 }

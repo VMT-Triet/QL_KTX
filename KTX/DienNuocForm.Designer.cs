@@ -60,6 +60,8 @@ namespace KTX
             this.txtTongTIen = new System.Windows.Forms.TextBox();
             this.cbSoPhong = new System.Windows.Forms.ComboBox();
             this.dateNgayLap = new System.Windows.Forms.DateTimePicker();
+            this.label17 = new System.Windows.Forms.Label();
+            this.chbTinhTrang = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
@@ -102,8 +104,6 @@ namespace KTX
             this.txtSearchCT = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.chbTinhTrang = new System.Windows.Forms.CheckBox();
             this.panelHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HoaDon)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -145,7 +145,7 @@ namespace KTX
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dgv_HoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgv_HoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_HoaDon.Location = new System.Drawing.Point(0, 398);
             this.dgv_HoaDon.Name = "dgv_HoaDon";
             this.dgv_HoaDon.ReadOnly = true;
@@ -519,6 +519,29 @@ namespace KTX
             this.dateNgayLap.Name = "dateNgayLap";
             this.dateNgayLap.Size = new System.Drawing.Size(243, 30);
             this.dateNgayLap.TabIndex = 35;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(376, 180);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(118, 61);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Tình Trạng:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chbTinhTrang
+            // 
+            this.chbTinhTrang.AutoSize = true;
+            this.chbTinhTrang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chbTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbTinhTrang.Location = new System.Drawing.Point(500, 183);
+            this.chbTinhTrang.Name = "chbTinhTrang";
+            this.chbTinhTrang.Size = new System.Drawing.Size(246, 55);
+            this.chbTinhTrang.TabIndex = 38;
+            this.chbTinhTrang.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -1061,29 +1084,6 @@ namespace KTX
             this.label8.TabIndex = 1;
             this.label8.Text = "Chi Tiết hóa đơn";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(376, 180);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(118, 61);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "Tình Trạng:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chbTinhTrang
-            // 
-            this.chbTinhTrang.AutoSize = true;
-            this.chbTinhTrang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chbTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbTinhTrang.Location = new System.Drawing.Point(500, 183);
-            this.chbTinhTrang.Name = "chbTinhTrang";
-            this.chbTinhTrang.Size = new System.Drawing.Size(246, 55);
-            this.chbTinhTrang.TabIndex = 38;
-            this.chbTinhTrang.UseVisualStyleBackColor = true;
             // 
             // DienNuocForm
             // 

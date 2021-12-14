@@ -38,16 +38,16 @@ namespace KTX
             this.labelNV = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnQuanLyGuiXe = new FontAwesome.Sharp.IconButton();
             this.btnBaoTri = new FontAwesome.Sharp.IconButton();
-            this.btnCTViPham = new FontAwesome.Sharp.IconButton();
+            this.btnNienKhoa = new FontAwesome.Sharp.IconButton();
             this.btnLoaiViPham = new FontAwesome.Sharp.IconButton();
             this.btnQuanLyViPham = new FontAwesome.Sharp.IconButton();
             this.btnThietBi = new FontAwesome.Sharp.IconButton();
             this.btnDienNuoc = new FontAwesome.Sharp.IconButton();
             this.btnChiTietPhong = new FontAwesome.Sharp.IconButton();
             this.btnThietBiPhong = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.btnQuanLySinhVien = new FontAwesome.Sharp.IconButton();
             this.btnQuanLyHopDong = new FontAwesome.Sharp.IconButton();
             this.btnQuanLyPhong = new FontAwesome.Sharp.IconButton();
             this.panelHeader.SuspendLayout();
@@ -179,16 +179,16 @@ namespace KTX
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panelMenu.Controls.Add(this.iconButton1);
+            this.panelMenu.Controls.Add(this.btnQuanLyGuiXe);
             this.panelMenu.Controls.Add(this.btnBaoTri);
-            this.panelMenu.Controls.Add(this.btnCTViPham);
+            this.panelMenu.Controls.Add(this.btnNienKhoa);
             this.panelMenu.Controls.Add(this.btnLoaiViPham);
             this.panelMenu.Controls.Add(this.btnQuanLyViPham);
             this.panelMenu.Controls.Add(this.btnThietBi);
             this.panelMenu.Controls.Add(this.btnDienNuoc);
             this.panelMenu.Controls.Add(this.btnChiTietPhong);
             this.panelMenu.Controls.Add(this.btnThietBiPhong);
-            this.panelMenu.Controls.Add(this.iconButton6);
+            this.panelMenu.Controls.Add(this.btnQuanLySinhVien);
             this.panelMenu.Controls.Add(this.btnQuanLyHopDong);
             this.panelMenu.Controls.Add(this.btnQuanLyPhong);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -197,25 +197,26 @@ namespace KTX
             this.panelMenu.Size = new System.Drawing.Size(216, 797);
             this.panelMenu.TabIndex = 3;
             // 
-            // iconButton1
+            // btnQuanLyGuiXe
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 869);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(195, 79);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Tag = "CV01,CV02";
-            this.iconButton1.Text = "Thống kê";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnQuanLyGuiXe.BackColor = System.Drawing.Color.Transparent;
+            this.btnQuanLyGuiXe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanLyGuiXe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLyGuiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyGuiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyGuiXe.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
+            this.btnQuanLyGuiXe.IconColor = System.Drawing.Color.Black;
+            this.btnQuanLyGuiXe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQuanLyGuiXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyGuiXe.Location = new System.Drawing.Point(0, 869);
+            this.btnQuanLyGuiXe.Name = "btnQuanLyGuiXe";
+            this.btnQuanLyGuiXe.Size = new System.Drawing.Size(195, 79);
+            this.btnQuanLyGuiXe.TabIndex = 0;
+            this.btnQuanLyGuiXe.Tag = "CV01,CV02";
+            this.btnQuanLyGuiXe.Text = "Quản lý gửi xe";
+            this.btnQuanLyGuiXe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLyGuiXe.UseVisualStyleBackColor = false;
+            this.btnQuanLyGuiXe.Click += new System.EventHandler(this.btnQuanLyGuiXe_Click);
             // 
             // btnBaoTri
             // 
@@ -238,26 +239,26 @@ namespace KTX
             this.btnBaoTri.UseVisualStyleBackColor = false;
             this.btnBaoTri.Click += new System.EventHandler(this.btnBaoTri_Click);
             // 
-            // btnCTViPham
+            // btnNienKhoa
             // 
-            this.btnCTViPham.BackColor = System.Drawing.Color.Transparent;
-            this.btnCTViPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCTViPham.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCTViPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCTViPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCTViPham.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
-            this.btnCTViPham.IconColor = System.Drawing.Color.Black;
-            this.btnCTViPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCTViPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCTViPham.Location = new System.Drawing.Point(0, 711);
-            this.btnCTViPham.Name = "btnCTViPham";
-            this.btnCTViPham.Size = new System.Drawing.Size(195, 79);
-            this.btnCTViPham.TabIndex = 0;
-            this.btnCTViPham.Tag = "CV01,CV05";
-            this.btnCTViPham.Text = "Chi tiết vi phạm";
-            this.btnCTViPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCTViPham.UseVisualStyleBackColor = false;
-            this.btnCTViPham.Click += new System.EventHandler(this.btnCTViPham_Click);
+            this.btnNienKhoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnNienKhoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNienKhoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNienKhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNienKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNienKhoa.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
+            this.btnNienKhoa.IconColor = System.Drawing.Color.Black;
+            this.btnNienKhoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNienKhoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNienKhoa.Location = new System.Drawing.Point(0, 711);
+            this.btnNienKhoa.Name = "btnNienKhoa";
+            this.btnNienKhoa.Size = new System.Drawing.Size(195, 79);
+            this.btnNienKhoa.TabIndex = 0;
+            this.btnNienKhoa.Tag = "CV01,CV05";
+            this.btnNienKhoa.Text = "Quản lý niên khóa";
+            this.btnNienKhoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNienKhoa.UseVisualStyleBackColor = false;
+            this.btnNienKhoa.Click += new System.EventHandler(this.btnCTViPham_Click);
             // 
             // btnLoaiViPham
             // 
@@ -385,25 +386,26 @@ namespace KTX
             this.btnThietBiPhong.UseVisualStyleBackColor = false;
             this.btnThietBiPhong.Click += new System.EventHandler(this.btnThietBiPhong_Click);
             // 
-            // iconButton6
+            // btnQuanLySinhVien
             // 
-            this.iconButton6.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.CreativeCommonsBy;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 158);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(195, 79);
-            this.iconButton6.TabIndex = 0;
-            this.iconButton6.Tag = "CV01,CV05";
-            this.iconButton6.Text = "Quản lý sinh viên";
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = false;
+            this.btnQuanLySinhVien.BackColor = System.Drawing.Color.Transparent;
+            this.btnQuanLySinhVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanLySinhVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLySinhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLySinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLySinhVien.IconChar = FontAwesome.Sharp.IconChar.CreativeCommonsBy;
+            this.btnQuanLySinhVien.IconColor = System.Drawing.Color.Black;
+            this.btnQuanLySinhVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQuanLySinhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLySinhVien.Location = new System.Drawing.Point(0, 158);
+            this.btnQuanLySinhVien.Name = "btnQuanLySinhVien";
+            this.btnQuanLySinhVien.Size = new System.Drawing.Size(195, 79);
+            this.btnQuanLySinhVien.TabIndex = 0;
+            this.btnQuanLySinhVien.Tag = "CV01,CV05";
+            this.btnQuanLySinhVien.Text = "Quản lý sinh viên";
+            this.btnQuanLySinhVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLySinhVien.UseVisualStyleBackColor = false;
+            this.btnQuanLySinhVien.Click += new System.EventHandler(this.btnQuanLySinhVien_Click);
             // 
             // btnQuanLyHopDong
             // 
@@ -424,6 +426,7 @@ namespace KTX
             this.btnQuanLyHopDong.Text = "Quản lý hợp đồng";
             this.btnQuanLyHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuanLyHopDong.UseVisualStyleBackColor = false;
+            this.btnQuanLyHopDong.Click += new System.EventHandler(this.btnQuanLyHopDong_Click);
             // 
             // btnQuanLyPhong
             // 
@@ -479,13 +482,13 @@ namespace KTX
         private FontAwesome.Sharp.IconButton btnDienNuoc;
         private FontAwesome.Sharp.IconButton btnQuanLyHopDong;
         private FontAwesome.Sharp.IconButton btnQuanLyPhong;
-        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton btnQuanLySinhVien;
         private FontAwesome.Sharp.IconButton btnChiTietPhong;
         private FontAwesome.Sharp.IconButton btnThietBiPhong;
-        private FontAwesome.Sharp.IconButton btnCTViPham;
+        private FontAwesome.Sharp.IconButton btnNienKhoa;
         private FontAwesome.Sharp.IconButton btnLoaiViPham;
         public System.Windows.Forms.Panel panelMain;
         private FontAwesome.Sharp.IconButton btnBaoTri;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnQuanLyGuiXe;
     }
 }

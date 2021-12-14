@@ -115,6 +115,7 @@
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="MaNK" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Association Name="HOPDONG_CTTHONGKE" Member="CTTHONGKEs" ThisKey="MaHopDong" OtherKey="MaHopDong" Type="CTTHONGKE" />
       <Association Name="NIENKHOA_HOPDONG" Member="NIENKHOA" ThisKey="MaNK" OtherKey="MaNK" Type="NIENKHOA" IsForeignKey="true" />
     </Type>

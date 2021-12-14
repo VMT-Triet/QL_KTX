@@ -216,15 +216,27 @@ namespace KTX
         }
 
         private void btnLuuCT_Click(object sender, EventArgs e)
-        {
+        {            
             CTHOADONDIENNUOC cthd = new CTHOADONDIENNUOC();
             //double sd = cthd.SoDienMoi + cthd.SoDienCu;
             //double sn = cthd.SoNuocMoi + cthd.SoNuocCu;
             cthd.MaHD = txtCTMaHD.Text;
             cthd.SoDienCu = (CTHoaDonDienNuocBus.laySoDienCu(cbSoPhong.SelectedValue.ToString()));
-            cthd.SoNuocCu = (CTHoaDonDienNuocBus.laySoNuocCu(cbSoPhong.SelectedValue.ToString()));
+            cthd.SoNuocCu = (CTHoaDonDienNuocBus.laySoNuocCu(cbSoPhong.SelectedValue.ToString()));            
             cthd.SoDienMoi = int.Parse(txtCTSoDienMoi.Text);
             cthd.SoNuocMoi = int.Parse(txtCTSoNuocMoi.Text);
+            if (cthd.SoDienMoi < cthd.SoDienCu)
+            {
+                MessageBox.Show("Bạn vui lòng nhập số điện mới lớn hơn hoặc bằng số điện cũ", "Thông báo");
+                txtCTSoDienMoi.Focus();
+                return;
+            }
+            if (cthd.SoNuocMoi < cthd.SoNuocCu)
+            {
+                MessageBox.Show("Bạn vui lòng nhập số nước mới lớn hơn hoặc bằng số nước cũ", "Thông báo");
+                txtCTSoNuocMoi.Focus();
+                return;
+            }
             cthd.TienDien = int.Parse((txtCTTienDien.Text == "") ? "0" : txtCTTienDien.Text);
             cthd.TienNuoc = int.Parse((txtCTTienNuoc.Text == "") ? "0" : txtCTTienNuoc.Text);
             if (isEdit)

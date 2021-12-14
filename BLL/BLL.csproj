@@ -34,6 +34,15 @@
     <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
       <HintPath>..\packages\DelegateDecompiler.0.29.1\lib\net45\DelegateDecompiler.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
     <Reference Include="Mono.Reflection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Reflection.Core.1.1.1\lib\net45\Mono.Reflection.dll</HintPath>
     </Reference>
@@ -50,10 +59,15 @@
   <ItemGroup>
     <Compile Include="BaoTriBLL.cs" />
     <Compile Include="CTBaoTriBLL.cs" />
+    <Compile Include="CTGuiXeBLL.cs" />
     <Compile Include="CTHoaDonDienNuocBLL.cs" />
     <Compile Include="CTViPhamBLL.cs" />
+    <Compile Include="GuiXeBLL.cs" />
     <Compile Include="HoaDonDienNuocBLL.cs" />
+    <Compile Include="HopDongBLL.cs" />
     <Compile Include="LoaiViPhamBLL.cs" />
+    <Compile Include="NienKhoaBLL.cs" />
+    <Compile Include="SinhVienBLL.cs" />
     <Compile Include="ThietBiBLL.cs" />
     <Compile Include="ThietBiPhongBLL.cs" />
     <Compile Include="ChucVuBLL.cs" />
