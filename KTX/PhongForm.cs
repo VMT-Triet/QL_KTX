@@ -82,7 +82,7 @@ namespace KTX
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (PhongBus.xoaPhong(txtSoPhong.Text))
+            if (PhongBus.xoaPhong(int.Parse(txtSoPhong.Text)))
             {
                 MessageBox.Show("Xóa thành công");
                 LoadDSPhong();
@@ -122,7 +122,7 @@ namespace KTX
                 return;
             }
             PHONG p = new PHONG();
-            p.SoPhong = txtSoPhong.Text;
+            p.SoPhong = int.Parse(txtSoPhong.Text);
             p.SoLuong = 0;
             p.TinhTrang = false;
             p.DongHoDien = 0;
@@ -135,6 +135,18 @@ namespace KTX
             else
                 MessageBox.Show("Thêm phòng thất bại", "Thông báo");
         }
-        
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+           
+            DataTable dtRPPhongAll = PhongBus.layRPDSPhongAll();
+            CrystalReportPhong baocao = new CrystalReportPhong();
+            baocao.SetDataSource(dtRPPhongAll);
+
+            ReportPhongForm rp = new ReportPhongForm();
+            rp.crystalReportViewer1.ReportSource = baocao;
+            rp.ShowDialog();
+
+        }
     }
 }

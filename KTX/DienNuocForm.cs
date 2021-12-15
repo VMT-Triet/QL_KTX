@@ -126,7 +126,7 @@ namespace KTX
             hd.MaHD = txtMaHD.Text;
             hd.NgayLap = dateNgayLap.Value;
             hd.MaNV = nvhientai.MaNV;
-            hd.SoPhong = cbSoPhong.SelectedValue.ToString();
+            hd.SoPhong = int.Parse(cbSoPhong.SelectedValue.ToString());
             hd.SoDien = int.Parse((txtDongHoDien.Text == "") ? "0" : txtDongHoDien.Text);
             hd.SoNuoc = int.Parse((txtDongHoNuoc.Text == "") ? "0" : txtDongHoNuoc.Text);
             hd.TongTien = int.Parse((txtTongTIen.Text == "") ? "0" : txtTongTIen.Text);
@@ -221,8 +221,8 @@ namespace KTX
             //double sd = cthd.SoDienMoi + cthd.SoDienCu;
             //double sn = cthd.SoNuocMoi + cthd.SoNuocCu;
             cthd.MaHD = txtCTMaHD.Text;
-            cthd.SoDienCu = (CTHoaDonDienNuocBus.laySoDienCu(cbSoPhong.SelectedValue.ToString()));
-            cthd.SoNuocCu = (CTHoaDonDienNuocBus.laySoNuocCu(cbSoPhong.SelectedValue.ToString()));            
+            cthd.SoDienCu = (CTHoaDonDienNuocBus.laySoDienCu(int.Parse(cbSoPhong.SelectedValue.ToString())));
+            cthd.SoNuocCu = (CTHoaDonDienNuocBus.laySoNuocCu(int.Parse(cbSoPhong.SelectedValue.ToString()))); 
             cthd.SoDienMoi = int.Parse(txtCTSoDienMoi.Text);
             cthd.SoNuocMoi = int.Parse(txtCTSoNuocMoi.Text);
             if (cthd.SoDienMoi < cthd.SoDienCu)

@@ -312,7 +312,7 @@ namespace DAL
 		
 		private System.Nullable<System.DateTime> _NgayLap;
 		
-		private string _SoPhong;
+		private System.Nullable<int> _SoPhong;
 		
 		private string _MaNV;
 		
@@ -328,7 +328,7 @@ namespace DAL
     partial void OnMaBTChanged();
     partial void OnNgayLapChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayLapChanged();
-    partial void OnSoPhongChanging(string value);
+    partial void OnSoPhongChanging(System.Nullable<int> value);
     partial void OnSoPhongChanged();
     partial void OnMaNVChanging(string value);
     partial void OnMaNVChanged();
@@ -382,8 +382,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="VarChar(10)")]
-		public string SoPhong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="Int")]
+		public System.Nullable<int> SoPhong
 		{
 			get
 			{
@@ -1528,7 +1528,7 @@ namespace DAL
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _SoPhong;
+		private int _SoPhong;
 		
 		private string _MaSV;
 		
@@ -1540,7 +1540,7 @@ namespace DAL
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnSoPhongChanging(string value);
+    partial void OnSoPhongChanging(int value);
     partial void OnSoPhongChanged();
     partial void OnMaSVChanging(string value);
     partial void OnMaSVChanged();
@@ -1554,8 +1554,8 @@ namespace DAL
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string SoPhong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="Int NOT NULL")]
+		public int SoPhong
 		{
 			get
 			{
@@ -1645,7 +1645,7 @@ namespace DAL
 					}
 					else
 					{
-						this._SoPhong = default(string);
+						this._SoPhong = default(int);
 					}
 					this.SendPropertyChanged("PHONG");
 				}
@@ -1951,7 +1951,7 @@ namespace DAL
 		
 		private System.Nullable<System.DateTime> _NgayLap;
 		
-		private string _SoPhong;
+		private System.Nullable<int> _SoPhong;
 		
 		private System.Nullable<double> _SoDien;
 		
@@ -1973,7 +1973,7 @@ namespace DAL
     partial void OnMaHDChanged();
     partial void OnNgayLapChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayLapChanged();
-    partial void OnSoPhongChanging(string value);
+    partial void OnSoPhongChanging(System.Nullable<int> value);
     partial void OnSoPhongChanged();
     partial void OnSoDienChanging(System.Nullable<double> value);
     partial void OnSoDienChanged();
@@ -2033,8 +2033,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="VarChar(10)")]
-		public string SoPhong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="Int")]
+		public System.Nullable<int> SoPhong
 		{
 			get
 			{
@@ -3316,7 +3316,7 @@ namespace DAL
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _SoPhong;
+		private int _SoPhong;
 		
 		private System.Nullable<int> _SoLuong;
 		
@@ -3334,7 +3334,7 @@ namespace DAL
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnSoPhongChanging(string value);
+    partial void OnSoPhongChanging(int value);
     partial void OnSoPhongChanged();
     partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
@@ -3353,8 +3353,8 @@ namespace DAL
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string SoPhong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int SoPhong
 		{
 			get
 			{
@@ -4083,7 +4083,7 @@ namespace DAL
 		
 		private string _MaTB;
 		
-		private string _SoPhong;
+		private int _SoPhong;
 		
 		private System.Nullable<int> _SoLuong;
 		
@@ -4097,7 +4097,7 @@ namespace DAL
     partial void OnCreated();
     partial void OnMaTBChanging(string value);
     partial void OnMaTBChanged();
-    partial void OnSoPhongChanging(string value);
+    partial void OnSoPhongChanging(int value);
     partial void OnSoPhongChanged();
     partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
@@ -4134,8 +4134,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string SoPhong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoPhong", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int SoPhong
 		{
 			get
 			{
@@ -4205,7 +4205,7 @@ namespace DAL
 					}
 					else
 					{
-						this._SoPhong = default(string);
+						this._SoPhong = default(int);
 					}
 					this.SendPropertyChanged("PHONG");
 				}

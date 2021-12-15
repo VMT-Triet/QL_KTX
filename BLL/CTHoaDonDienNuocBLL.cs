@@ -47,7 +47,7 @@ namespace BLL
                 return false;
             }
         }
-        public double laySoDienCu(string sp)
+        public double laySoDienCu(int sp)
         {
             double d;
             PHONG p = new PHONG();
@@ -56,7 +56,7 @@ namespace BLL
             return d;
         }
 
-        public double laySoNuocCu(string sp)
+        public double laySoNuocCu(int sp)
         {
             double n;
             PHONG p = new PHONG();

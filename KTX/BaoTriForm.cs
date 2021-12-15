@@ -254,7 +254,7 @@ namespace KTX
             {
                 BAOTRI bt = new BAOTRI();
                 bt.MaBT = txtMaBT.Text;
-                bt.SoPhong = cbSoPhong.SelectedValue.ToString();
+                bt.SoPhong = int.Parse(cbSoPhong.SelectedValue.ToString());
                 bt.MaNV = nvhientai.MaNV;
                 bt.NgayLap = dateNgayLap.Value;
                 bt.TongTien = int.Parse((txtTongTien.Text == "") ? "0" : txtTongTien.Text);

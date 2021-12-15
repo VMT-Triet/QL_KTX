@@ -4,7 +4,7 @@
     <Type Name="BAOTRI">
       <Column Name="MaBT" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="NgayLap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="SoPhong" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SoPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="BAOTRI_CTBAOTRI" Member="CTBAOTRIs" ThisKey="MaBT" OtherKey="MaBT" Type="CTBAOTRI" />
@@ -65,7 +65,7 @@
   </Table>
   <Table Name="dbo.CTPHONG" Member="CTPHONGs">
     <Type Name="CTPHONG">
-      <Column Name="SoPhong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SoPhong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="MaSV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="GuiXe" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="PHONG_CTPHONG" Member="PHONG" ThisKey="SoPhong" OtherKey="SoPhong" Type="PHONG" IsForeignKey="true" />
@@ -97,7 +97,7 @@
     <Type Name="HOADONDIENNUOC">
       <Column Name="MaHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="NgayLap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="SoPhong" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SoPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SoDien" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="SoNuoc" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
@@ -168,7 +168,7 @@
   </Table>
   <Table Name="dbo.PHONG" Member="PHONGs">
     <Type Name="PHONG">
-      <Column Name="SoPhong" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="DongHoDien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
@@ -209,7 +209,7 @@
   <Table Name="dbo.THIETBIPHONG" Member="THIETBIPHONGs">
     <Type Name="THIETBIPHONG">
       <Column Name="MaTB" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="SoPhong" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="PHONG_THIETBIPHONG" Member="PHONG" ThisKey="SoPhong" OtherKey="SoPhong" Type="PHONG" IsForeignKey="true" />
       <Association Name="THIETBI_THIETBIPHONG" Member="THIETBI" ThisKey="MaTB" OtherKey="MaTB" Type="THIETBI" IsForeignKey="true" />

@@ -101,7 +101,7 @@ namespace KTX
             {
                 THIETBIPHONG tbp = new THIETBIPHONG();
                 tbp.MaTB = cbMaTB.SelectedValue.ToString();
-                tbp.SoPhong = cbSoPhong.SelectedValue.ToString();
+                tbp.SoPhong = int.Parse(cbSoPhong.SelectedValue.ToString());
                 tbp.SoLuong = int.Parse(txtSoLuong.Text);                
                 if (isEdit)
                 {

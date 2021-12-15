@@ -38,6 +38,7 @@ namespace KTX
             this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnLuu = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
@@ -70,6 +71,7 @@ namespace KTX
             this.panel.Controls.Add(this.btnRefresh);
             this.panel.Controls.Add(this.btnSearch);
             this.panel.Controls.Add(this.txtSearch);
+            this.panel.Controls.Add(this.iconButton1);
             this.panel.Controls.Add(this.btnLuu);
             this.panel.Controls.Add(this.btnXoa);
             this.panel.Controls.Add(this.btnThem);
@@ -170,6 +172,22 @@ namespace KTX
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(1092, 30);
             this.txtSearch.TabIndex = 4;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(770, 160);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(151, 64);
+            this.iconButton1.TabIndex = 3;
+            this.iconButton1.Text = "In báo cáo";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnLuu
             // 
@@ -393,5 +411,6 @@ namespace KTX
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private FontAwesome.Sharp.IconButton btnLuu;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

@@ -123,7 +123,7 @@ namespace KTX
             else
             {
                 CTPHONG ctp = new CTPHONG();
-                ctp.SoPhong = cbSoPhong.Text;
+                ctp.SoPhong = int.Parse(cbSoPhong.Text);
                 ctp.MaSV = txtMaSV.Text;
                 ctp.GuiXe = chboxGuiXe.Checked;
                 if (isEdit)
