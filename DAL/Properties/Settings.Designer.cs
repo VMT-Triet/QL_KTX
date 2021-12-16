@@ -26,8 +26,8 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-RQD3B3O\\SQLEXPRESS;Initial Catalog=QL_KTX;Persist Security In" +
-            "fo=True;User ID=sa;Password=123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-DK0LCEI6\\NHUT;Initial Catalog=QL_KTX;Persist Security Info=Tru" +
+            "e;User ID=sa;Password=sa2012")]
         public string QL_KTXConnectionString {
             get {
                 return ((string)(this["QL_KTXConnectionString"]));
