@@ -43,7 +43,7 @@ namespace KTX
             this.btnCTHoaDon = new FontAwesome.Sharp.IconButton();
             this.btnLuu = new FontAwesome.Sharp.IconButton();
             this.btnSua = new FontAwesome.Sharp.IconButton();
-            this.btnXoa = new FontAwesome.Sharp.IconButton();
+            this.btnInBaoCao = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -240,7 +240,7 @@ namespace KTX
             this.tableLayoutPanel3.Controls.Add(this.btnCTHoaDon, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnLuu, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnSua, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btnXoa, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnInBaoCao, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnThem, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 313);
@@ -298,20 +298,21 @@ namespace KTX
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // btnXoa
+            // btnInBaoCao
             // 
-            this.btnXoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
-            this.btnXoa.IconColor = System.Drawing.Color.Black;
-            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(152, 3);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(143, 79);
-            this.btnXoa.TabIndex = 12;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnInBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInBaoCao.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.btnInBaoCao.IconColor = System.Drawing.Color.Black;
+            this.btnInBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInBaoCao.Location = new System.Drawing.Point(152, 3);
+            this.btnInBaoCao.Name = "btnInBaoCao";
+            this.btnInBaoCao.Size = new System.Drawing.Size(143, 79);
+            this.btnInBaoCao.TabIndex = 12;
+            this.btnInBaoCao.Text = "In báo cáo";
+            this.btnInBaoCao.UseVisualStyleBackColor = true;
+            this.btnInBaoCao.Click += new System.EventHandler(this.btnInBaoCao_Click);
             // 
             // btnThem
             // 
@@ -1123,7 +1124,7 @@ namespace KTX
         private FontAwesome.Sharp.IconButton btnCTHoaDon;
         private FontAwesome.Sharp.IconButton btnLuu;
         private FontAwesome.Sharp.IconButton btnSua;
-        private FontAwesome.Sharp.IconButton btnXoa;
+        private FontAwesome.Sharp.IconButton btnInBaoCao;
         private FontAwesome.Sharp.IconButton btnThem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label2;

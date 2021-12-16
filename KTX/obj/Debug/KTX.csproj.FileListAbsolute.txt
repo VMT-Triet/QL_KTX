@@ -85,3 +85,4 @@ E:\Github\QL_KTX\KTX\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dl
 E:\Github\QL_KTX\KTX\bin\Debug\stdole.dll
 E:\Github\QL_KTX\KTX\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\Github\QL_KTX\KTX\obj\Debug\KTX.ReportPhongForm.resources
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.ReportDienNuocForm.resources

@@ -98,6 +98,18 @@
     <Compile Include="BaoTriForm.Designer.cs">
       <DependentUpon>BaoTriForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrystalReportBaoTri.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBaoTri.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportDienNuoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportDienNuoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrystalReportPhong.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -195,6 +207,12 @@
     <Compile Include="QuanLyViPhamForm.Designer.cs">
       <DependentUpon>QuanLyViPhamForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportDienNuocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDienNuocForm.Designer.cs">
+      <DependentUpon>ReportDienNuocForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportPhongForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +239,14 @@
     </Compile>
     <EmbeddedResource Include="BaoTriForm.resx">
       <DependentUpon>BaoTriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportBaoTri.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBaoTri.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportDienNuoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportDienNuoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportPhong.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -278,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyViPhamForm.resx">
       <DependentUpon>QuanLyViPhamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDienNuocForm.resx">
+      <DependentUpon>ReportDienNuocForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportPhongForm.resx">
       <DependentUpon>ReportPhongForm.cs</DependentUpon>
