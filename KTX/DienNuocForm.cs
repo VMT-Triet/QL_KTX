@@ -318,6 +318,13 @@ namespace KTX
             btnLuu.Enabled = true;
         }
 
+        private void btnInBaoCao_Click(object sender, EventArgs e)
+        {
+            
+            ReportDienNuocForm rp = new ReportDienNuocForm();            
+            rp.ShowDialog();
+        }
+
         private void btnCTHoaDon_Click(object sender, EventArgs e)
         {
             if (txtMaHD.Text != null)

@@ -85,6 +85,7 @@ E:\Github\QL_KTX\KTX\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dl
 E:\Github\QL_KTX\KTX\bin\Debug\stdole.dll
 E:\Github\QL_KTX\KTX\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\Github\QL_KTX\KTX\obj\Debug\KTX.ReportPhongForm.resources
+<<<<<<< HEAD
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\bin\Debug\ktx.mdf
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\bin\Debug\ktx_log.ldf
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\bin\Debug\KTX.exe.config
@@ -144,3 +145,6 @@ C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\obj\Debug\KTX.csproj.GenerateResource
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\obj\Debug\KTX.csproj.CoreCompileInputs.cache
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\obj\Debug\KTX.exe
 C:\Users\tangh\Documents\GitHub\QL_KTX\KTX\obj\Debug\KTX.pdb
+=======
+E:\Github\QL_KTX\KTX\obj\Debug\KTX.ReportDienNuocForm.resources
+>>>>>>> fe27a21d751e99c93d427dd4192a4e348a8510d6

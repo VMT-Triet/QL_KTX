@@ -71,5 +71,27 @@ namespace BLL
                 return false;
             }
         }
+        public DataTable layRPBaoTriDaThanhToan(int thang,int nam)
+        {
+            var query = from bt in db.BAOTRIs
+                        join ctbt in db.CTBAOTRIs on bt.MaBT equals ctbt.MaBT
+                        where (bt.NgayLap.Value.Year == nam && bt.NgayLap.Value.Month == thang && ctbt.TinhTrang == true)
+                        select new
+                        {
+                            NGAYLAP = bt.NgayLap,
+                            SOPHONG = bt.SoPhong,
+                            TONGTIEN = bt.TongTien,
+                            MASV = ctbt.MaSV,
+                            GHICHU = ctbt.GhiChu,
+                            SOLUONG = ctbt.SoLuong,
+                            NGAYSUA = ctbt.NgaySua,
+                            THANHTIEN = ctbt.ThanhTien
+                        };
+            DataTable dt = new DataTable();
+            SqlCommand cmd = db.GetCommand(query) as SqlCommand;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(dt);
+            return dt;
+        }
     }
 }
